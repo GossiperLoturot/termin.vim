@@ -1,16 +1,16 @@
 local M = {}
-local theme = require('termin.theme')
+local theme = require("termin.theme")
 
 M.setup = function()
-  vim.cmd('hi clear')
+  vim.cmd("hi clear")
 
-  vim.o.background = 'dark'
-  if vim.fn.exists('syntax_on') then
-    vim.cmd('syntax reset')
+  vim.o.background = "dark"
+  if vim.fn.exists("syntax_on") then
+    vim.cmd("syntax reset")
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = 'termin'
+  vim.g.colors_name = "termin"
 
   theme.set_highlights()
 end
